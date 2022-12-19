@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>SMPHB_BulletShieldBlood</defName>
+    <label>bloodshield</label>
+    <thingClass>ThingWithComps</thingClass>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Ethereal/PsychicShieldRipples</texPath>
+      <shaderType>BulletShieldPsychic</shaderType>
+      <color>(127, 61, 61)</color>
+      <drawSize>9.9</drawSize>
+      <shaderParameters>
+        <_PulseInterval>0.5</_PulseInterval>
+        <_DistortionScale>0.5</_DistortionScale>
+        <_DistortionIntensity>0.15</_DistortionIntensity>
+        <_MinAlpha>0.1</_MinAlpha>
+        <_MaxAlpha>0.3</_MaxAlpha>
+        <_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+      </shaderParameters>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>4.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+        <interceptOutgoingProjectiles>true</interceptOutgoingProjectiles>
+        <color>(0.54902, 0.23922, 0.23922)</color>
+        <minAlpha>0.2</minAlpha>
+        <interceptEffect>Interceptor_BlockedProjectilePsychic</interceptEffect>
+      </li>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>900</delayTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

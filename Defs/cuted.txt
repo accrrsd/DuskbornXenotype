@@ -1,0 +1,132 @@
+  <!-- <abilities>
+    <li>Resurrect</li>
+  </abilities>
+  <descriptionHyperlinks>
+    <AbilityDef>Resurrect</AbilityDef>
+  </descriptionHyperlinks> -->
+      <!-- <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(20, 1)</li>
+        <li>(30, 0)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve> -->
+      <!-- <li>Bloodfeed</li> -->
+<!-- Носитель этого гена принадлежит к Ventrue bloodline.
+
+  Эта родословная специализируется на контроле разума. Они обожают власть и считают себя самыми чистокровным родом. Именно Ventrue на протяжении веков контролируют общество, с помощью связей, шантажа и заговоров они добиваются наибольшего успеха. 
+
+  Аристократичная природа Ventrue и конфликты внутри клана нередко мешают им объединиться против общего врага. И хотя большинство считает их снобами, когда нужна какая-то помощь, в первую очередь обращаются именно к ним.  -->
+
+<!-- <GeneDef ParentName="SMPHT_HemogenicBloodlineBase">
+    <defName>SMPHB_VentrueBloodline</defName>
+    <label>Ventrue</label>
+    <displayCategory>SMPHB_VentrueCategory</displayCategory>
+    <description>The carrier of this gene belongs to Ventrue bloodline.\n\nThis bloodline specializes in mind control. They adore power and consider themselves the purest kind. It is Ventrue who have controlled society for centuries, with the help of connections, blackmail and conspiracies, they achieve the greatest success.\n\nVentrue's aristocratic nature and conflicts within the clan often prevent them from uniting against a common enemy. And although most consider them snobs, when they need some help, they are the first to turn to them.</description>
+    <iconPath>HemoIcon/VentrueIcon</iconPath>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>vent</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="SMPHT_HemogenicBloodlineBase">
+    <defName>SMPHB_HecataBloodline</defName>
+    <label>Hecata</label>
+    <displayCategory>SMPHB_HecataCategory</displayCategory>
+    <description>The carrier of this gene belongs to Ventrue bloodline.\n\nThis bloodline specializes in mind control. They adore power and consider themselves the purest kind. It is Ventrue who have controlled society for centuries, with the help of connections, blackmail and conspiracies, they achieve the greatest success.\n\nVentrue's aristocratic nature and conflicts within the clan often prevent them from uniting against a common enemy. And although most consider them snobs, when they need some help, they are the first to turn to them.</description>
+    <iconPath>HemoIcon/HecataIcon</iconPath>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>heca</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="SMPHT_HemogenicBloodlineBase">
+    <defName>SMPHB_TremereBloodline</defName>
+    <label>Tremere</label>
+    <displayCategory>SMPHB_TremereCategory</displayCategory>
+    <description>The carrier of this gene belongs to Ventrue bloodline.\n\nThis bloodline specializes in mind control. They adore power and consider themselves the purest kind. It is Ventrue who have controlled society for centuries, with the help of connections, blackmail and conspiracies, they achieve the greatest success.\n\nVentrue's aristocratic nature and conflicts within the clan often prevent them from uniting against a common enemy. And although most consider them snobs, when they need some help, they are the first to turn to them.</description>
+    <iconPath>HemoIcon/TremereIcon</iconPath>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>treme</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef> -->
+
+<!-- <GeneDef ParentName="SMPHT_HemogenicBloodlineBase">
+    <defName>SMPHB_NosferatuBloodline</defName>
+    <label>Nosferatu</label>
+    <displayCategory>SMPHB_NosferatuCategory</displayCategory>
+    <description>The carrier of this gene belongs to Ventrue bloodline.\n\nThis bloodline specializes in mind control. They adore power and consider themselves the purest kind. It is Ventrue who have controlled society for centuries, with the help of connections, blackmail and conspiracies, they achieve the greatest success.\n\nVentrue's aristocratic nature and conflicts within the clan often prevent them from uniting against a common enemy. And although most consider them snobs, when they need some help, they are the first to turn to them.</description>
+    <iconPath>HemoIcon/NosferatuIcon</iconPath>
+    <geneClass>SMPHB.HemogenBloodline_Base.HemogenBloodline_Gene</geneClass>
+    <statOffsets>
+      <PawnBeauty>-4</PawnBeauty>
+    </statOffsets>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>nosfe</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef> -->
+
+<!-- <customEffectDescriptions>
+      <li>Hemogen limit +20.</li>
+      <li>Improves the performance of pawn organs.</li>
+    </customEffectDescriptions>
+    <geneClass>SMPHT.GeneHemogenTier.GeneHemogenTier_Gene</geneClass>
+    <modExtensions>
+      <li Class="SMPHT.GeneHemogenTier.GeneHemogenTier_Comps">
+        <hediffImplant>SMPHT_ActiveBlood</hediffImplant>
+        <hemogenOffset>0.20</hemogenOffset>
+      </li>
+    </modExtensions>
+    <resourceLabel>hemogen</resourceLabel>
+    <resourceLossPerDay>0.05</resourceLossPerDay> -->
+
+    //--------------------------------------------------------------------------
+
+
+    
+<!-- <GeneCategoryDef>
+    <defName>SMPHB_VentrueCategory</defName>
+    <label>Ventrue abilities</label>
+    <displayPriorityInXenotype>514</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>SMPHB_NosferatuCategory</defName>
+    <label>Nosferatu abilities</label>
+    <displayPriorityInXenotype>513</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>SMPHB_TremereCategory</defName>
+    <label>Tremere abilities</label>
+    <displayPriorityInXenotype>512</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>SMPHB_HecataCategory</defName>
+    <label>Hecata abilities</label>
+    <displayPriorityInXenotype>511</displayPriorityInXenotype>
+  </GeneCategoryDef> -->
+
+
+  //-------------------------------------------------
+
+        <!-- <mtbDeathDestroysBrain>true</mtbDeathDestroysBrain> -->
+  //-------------------------------------------------
+
+  
