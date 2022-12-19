@@ -1,8 +1,13 @@
 # Duskborn.
 
-The duskborn are ancient genetically distinct people from an ideal planet that became hell after the experiments of the archotech.
+There was a planet with ideal climatic conditions on which the life of creatures who accidentally got there flourished, but one day the Archotech noticed an interesting signature of living beings in ideal living conditions
+and decided to conduct an experiment by changing the composition of the atmosphere, which caused eternal twilight, but this was not enough, the archotech divided the creatures into their habitat and began to conduct experiments.
 
-Three different genotypes of duskborn with their abilities have lived in three different habitats for thousands of years, these environments have influenced them, increasing their genetic difference between each other.
+After conducting experiments, carriers of the "Hemogenic" gene became the dominant species on the planet, which endowed the user with a need for blood, along with divergent abilities.
+
+Later, the code of the gene was transmitted by the archotech to the central computer and left the planet, but the Hemogenics, due to the fact that they were the tip of the food chain, were able to survive and develop to a state distinguishable from that which was recorded by the Archotech.
+
+After a while, three branches of the genotype were formed with their own unique mutations. Each of them, however, lived in unique climatic conditions.
 
 Briefly about genotypes:
 
@@ -48,6 +53,14 @@ Hecata imitating natural Detritophages learned to survive in such conditions, ab
 Having been fed with rot, they learned to control the blood in dead bodies, began to transform under the influence of the habitat, they themselves learned to release toxins. The same environment disfigured them.
 
 In the war with the empire, Hecata was the best of all, due to its unique and very difficult climate, as well as the ability to lift the bodies of the Imperials, they fought with the enemy with his own people and suffered almost no losses
+
+## War against the Empire
+
+Once an Empire flotilla wandered onto the planet, and seeing that hemogenics also have unusual abilities, the empire considered this a sacrilege and unleashed a war.
+
+The war went on for a long time, but the fleet, even with an advantage in quantity and technology, could not eradicate the infection, they only suffered losses. Finally, it was decided not to lose the ladies and gentlemen of the blue blood and the Commander gave the order to bombard the planet.
+
+During the operation, the original hemogenics died, but their infection managed to spread in the fleet, which spread it throughout space.
 
 ## Abilities
 
