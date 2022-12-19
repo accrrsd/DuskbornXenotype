@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- todo Создание гуля -->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>TEST_EatVampire</defName>
+    <label>TEST_EatVampire</label>
+    <description>Bite the target and extract hemogen directly from their blood. The target will lose blood and will be horrified by the interaction, but will be otherwise unharmed. A fast-acting coagulant will seal the wound to prevent bleeding.\n\nCan only target non-hemogenic humans. Hemogen gain is affected by the target's body size.</description>
+    <iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+    <category>Sanguophage</category>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>10</warmupTime>
+      <targetParams>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SMPHB.TEST_EatVampire.TEST_EatVampire_Comps">
+        <opinionThoughtDefToGiveTargetBeforeBite>SMPHB_TryedToKillThought</opinionThoughtDefToGiveTargetBeforeBite>
+        <thoughtDefToGiveTargetBeforeBite>SMPHB_TryedToKillThoughtMood</thoughtDefToGiveTargetBeforeBite>
+        <hemogenGain>0</hemogenGain>
+        <bloodFilthToSpawnRange>10</bloodFilthToSpawnRange>
+        <resistanceGain>40</resistanceGain>
+        <targetBloodLoss>1</targetBloodLoss>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>TEST_MakeVampire</defName>
+    <label>TEST_MakeVampire</label>
+    <description>Bite the target and extract hemogen directly from their blood. The target will lose blood and will be horrified by the interaction, but will be otherwise unharmed. A fast-acting coagulant will seal the wound to prevent bleeding.\n\nCan only target non-hemogenic humans. Hemogen gain is affected by the target's body size.</description>
+    <iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>10</warmupTime>
+      <targetParams>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SMPHB.CheckGeneration.CheckGeneration_Comps">
+        <maxGeneration>15</maxGeneration>
+        <hideGizmo>true</hideGizmo>
+      </li>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>SMPHB.TEST_GiveVampire.TEST_GiveVampire_CompClass</compClass>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBaseSkip">
+    <defName>SMPHB_BloodShield</defName>
+    <label>bloodshield</label>
+    <description>Creates a spherical ground shield using the power of Hermogenes, the shield reflects all incoming and outgoing projectiles at ground level. This process is strong enough to detonate explosive shells. People and objects will not be harmed.</description>
+    <iconPath>Abilities/BulletShield</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <hotKey>Misc12</hotKey>
+    <!-- <canUseAoeToGetTargets>False</canUseAoeToGetTargets> -->
+    <statBases>
+      <Ability_EffectRadius>4.9</Ability_EffectRadius>
+    </statBases>
+    <!-- 25 sec -->
+    <cooldownTicksRange>1500</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <!-- <targetRequired>false</targetRequired> -->
+    <verbProperties>
+      <warmupTime>1.5</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.2</hemogenCost>
+      </li>
+      <li Class="CompProperties_AbilitySpawn">
+        <thingDef>SMPHB_BulletShieldBlood</thingDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BulletShieldAreaEffect</fleckDef>
+        <sound>Psycast_Skip_Exit</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>SMPHB_GrabTheHeart</defName>
+    <label>grab the heart</label>
+    <description>Using the power of the hemogen, controls the target's blood, allowing you to increase blood pressure in certain areas of the heart, which causes a heart attack. The principle is similar to direct heart massage, which is why it is called "heart capture". Does not affect bloodfeeder's</description>
+    <iconPath>Abilities/GrabTheHeart</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <hotKey>Misc11</hotKey>
+    <!-- 3 sec-->
+    <cooldownTicksRange>180</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <showCastingProgressBar>true</showCastingProgressBar>
+    <verbProperties>
+      <warmupTime>5</warmupTime>
+      <!-- <drawAimPie>false</drawAimPie> -->
+      <range>8.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetBloodfeeders>false</canTargetBloodfeeders>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <compClass>SMPHB.Abilities.Ability_HemogenCostDisplay_CompClass</compClass>
+        <hemogenCost>0.4</hemogenCost>
+      </li>
+      <li Class="SMPHB.Abilities.Ability_Precast_Comps">
+        <compClass>SMPHB.Abilities.GrabTheHeart.GrabTheHeart_CompClass</compClass>
+        <summaryHemogenCost>0.4</summaryHemogenCost>
+        <precastSeconds>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </precastSeconds>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <NeedDef>
+    <defName>SMPHB_HemogenNeeded</defName>
+    <needClass>SMPHB.Need_HemogenNeeded.Need_SMPHB_Hemogen</needClass>
+    <label>Hemogen level</label>
+    <description>Kill satiety fulfills a built-in desire to do violence at close range to human victims. If it isn't satiated, the person will become very unhappy.</description>
+    <baseLevel>0</baseLevel>
+    <showForCaravanMembers>true</showForCaravanMembers>
+    <minIntelligence>Humanlike</minIntelligence>
+    <onlyIfCausedByGene>true</onlyIfCausedByGene>
+    <listPriority>900</listPriority>
+    <major>true</major>
+  </NeedDef>
+
+</Defs>
