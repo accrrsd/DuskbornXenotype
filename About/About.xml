@@ -2,16 +2,18 @@
 
 <ModMetaData>
 
-	<name>[SMP] Hemogenic Bloodlines</name>
-	<author>accrrsd</author>
-	<packageId>accrrsd.SMP.SMPHB</packageId>
-	<supportedVersions>
-		<li>1.4</li>
-	</supportedVersions>
-	<description>This mod is inspired by the idea of technical vampirism by "hemogens" and Vampire the Masquerade. \n\nAdds several "genera" of hemogenics, each of which has its own characteristic abilities, improves the vanilla concept of hemogenics and, in general, makes the game just more interesting, without going very far from the vanilla idea of genetics.</description>
-	<loadAfter>
-		<li>Ludeon.Rimworld</li>
-		<li>Ludeon.Biotech</li>
-	</loadAfter>
+  <name>[SMP] Duskborn xenotype (hemogenic)</name>
+  <author>accrrsd</author>
+  <packageId>accrrsd.SMP.db</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>This mod is inspired by the new mechanics of genes and, in particular, the xenotype
+    "hemogenic", \n\nit extends the natural mechanics of vampirism in an interesting way without
+    changing anything and without departing from the vanilla representation.</description>
+  <loadAfter>
+    <li>Ludeon.Rimworld</li>
+    <li>Ludeon.Biotech</li>
+  </loadAfter>
 
 </ModMetaData>

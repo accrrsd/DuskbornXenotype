@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <SMPHB_NotABloodlineInstance>Cannot use {ABILITY_label}, {PAWN_nameDef} is not a bloodline instance.</SMPHB_NotABloodlineInstance>
-  <SMPHB_TryedToKillMe>{PAWN_nameDef} tried to kill me!</SMPHB_TryedToKillMe>
-</LanguageData>

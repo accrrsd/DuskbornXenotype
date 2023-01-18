@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <SMPHB_NotABloodlineInstance>Невозможно применить {ABILITY_label}, цель не является представителем родословной.</SMPHB_NotABloodlineInstance>
-  <SMPHB_TryedToKillMe>{PAWN_nameDef} попытался убить меня!</SMPHB_TryedToKillMe>
-</LanguageData>

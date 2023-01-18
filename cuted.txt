@@ -1,0 +1,16 @@
+    <li Class="SMP_Duskborn.Abilities.DuskKiss.DuskKiss_Comps">
+      <!--
+      <thoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThought</thoughtDefToGiveDuskbornTargetBeforeBite> -->
+      <!--
+      <opinionThoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThoughtMood</opinionThoughtDefToGiveDuskbornTargetBeforeBite> -->
+
+      <!--
+      <thoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThought</thoughtDefToGiveHumanTargetBeforeBite> -->
+      <!--
+      <opinionThoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThoughtMood</opinionThoughtDefToGiveHumanTargetBeforeBite> -->
+
+      <hemogenGain>0</hemogenGain>
+      <bloodFilthToSpawnRange>10</bloodFilthToSpawnRange>
+      <resistanceGain>40</resistanceGain>
+      <targetBloodLoss>1</targetBloodLoss>
+    </li>

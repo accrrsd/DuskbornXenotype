@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- todo Добавлять бессмертие от 7 или от 10 -->
+<Defs>
+  <HediffDef>
+    <defName>SMPdb_PowerOfBloodline</defName>
+    <label>Power of bloodline</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+    <description>TEST</description>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties">
+        <compClass>SMP_Duskborn.Hediffs.PowerOfBloodline_CompClass</compClass>
+      </li>
+    </comps>
+    <initialSeverity>16</initialSeverity>
+    <maxSeverity>16</maxSeverity>
+    <minSeverity>3</minSeverity>
+    <stages>
+      <li>
+        <label>Antediluvians 3-th</label>
+        <minSeverity>3</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <!-- M-thuselah -->
+      <!-- #region  -->
+      <li>
+        <label>M-thuselah 4-th</label>
+        <minSeverity>4</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>M-thuselah 5-th</label>
+        <minSeverity>5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <!-- #endregion -->
+      <!-- Elder -->
+      <!-- #region -->
+      <li>
+        <label>Elder 6-th</label>
+        <minSeverity>6</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Elder 7-th</label>
+        <minSeverity>7</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <!-- #endregion -->
+      <!-- Ancilla -->
+      <!-- #region -->
+      <li>
+        <label>Ancilla 8-th</label>
+        <minSeverity>8</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Ancilla 9-th</label>
+        <minSeverity>9</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Ancilla 10-th</label>
+        <minSeverity>10</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <!-- #endregion -->
+      <!-- Neonate -->
+      <!-- #region -->
+      <li>
+        <label>Neonate 11-th</label>
+        <minSeverity>11</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Neonate 12-th</label>
+        <minSeverity>12</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Neonate 13-th</label>
+        <minSeverity>13</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>13</setMax>
+          </li>
+        </capMods>
+      </li>
+      <!-- #endregion -->
+      <!-- Duskborn -->
+      <!-- #region -->
+      <li>
+        <label>Lowborn 14-th</label>
+        <minSeverity>14</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Lowborn 15-th</label>
+        <minSeverity>15</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+
+      <li>
+        <label>Lowborn 16-th</label>
+        <minSeverity>16</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <!-- #endregion -->
+    </stages>
+  </HediffDef>
+</Defs>
