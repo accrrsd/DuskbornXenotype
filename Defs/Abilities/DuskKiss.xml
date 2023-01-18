@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Цель умирает от потери крови, затем кровь теряет вампир (как стоимость крови, примерно 80)
+делающий эту цель вампиром и цель воскрешается -->
+<Defs>
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>SMPdb_DuskKiss</defName>
+    <label>Dusk kiss</label>
+    <description>A kiss at dusk is an ancient ritual that allows you to turn people into
+      hemogenics or absorb another hemogenic,\n\nit was so called because it was used as torture.
+      \n\nA person was turned into a
+      hemogenic and locked in a cage - left to burn in the sun, it's not fatal, but very very
+      painful.\n\nIn cases with the absorption of someone else's hermogen, such kisses are their
+      very essence, the thirst for improvement, so the name quickly caught on.
+      \n\n\n\nIf a person turns into a hemogenic, the target's blood is replaced by the hemogenic's
+      blood, which causes the target to temporarily die. Interrupting this ritual, it will be
+      impossible to resurrect the goal.
+      \n\nAnd although the act of such a kiss should already be considered a gift, some people do
+      not accept the essence of hemogenics and will resist transformation, oh, these moralists.
+      \n\nThe weakest generations of the duskborn's die during the ritual, as the
+      target drinks all their blood.
+      \n\n\n\nIf the target of this ritual is another hemogenic,
+      the caster completely drains the target's blood, causing her to die. And although the caster
+      must get enough of this blood, this does not happen, since it replaces his own blood.</description>
+    <iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+    <category>Sanguophage</category>
+    <displayOrder>-1</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>10</warmupTime>
+      <targetParams>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <!-- Механика убийства цели, затраты гемогена и воскрешение цели -->
+    <!-- Если у цели есть трейты добрый и т.п то он сопротивляется (или цель является гемогеником),
+    если кровожадный и т.п он не
+      сопротивлятся, в противном случае 50/50. -->
+    <!-- todo Смерть слабого вампира при попытке создать нового вампира -->
+    <comps>
+      <li Class="SMP_Duskborn.Abilities.DuskKiss.DuskKiss_Comps">
+        <!--
+        <thoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThought</thoughtDefToGiveDuskbornTargetBeforeBite> -->
+        <!--
+        <opinionThoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThoughtMood</opinionThoughtDefToGiveDuskbornTargetBeforeBite> -->
+
+        <!--
+        <thoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThought</thoughtDefToGiveHumanTargetBeforeBite> -->
+        <!--
+        <opinionThoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThoughtMood</opinionThoughtDefToGiveHumanTargetBeforeBite> -->
+
+        <hemogenGain>0</hemogenGain>
+        <bloodFilthToSpawnRange>10</bloodFilthToSpawnRange>
+        <resistanceGain>40</resistanceGain>
+        <targetBloodLoss>1</targetBloodLoss>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BloodSplash</fleckDef>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>
