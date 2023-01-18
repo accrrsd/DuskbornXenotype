@@ -39,22 +39,13 @@
         <canTargetBuildings>false</canTargetBuildings>
       </targetParams>
     </verbProperties>
-    <!-- Механика убийства цели, затраты гемогена и воскрешение цели -->
-    <!-- Если у цели есть трейты добрый и т.п то он сопротивляется (или цель является гемогеником),
-    если кровожадный и т.п он не
-      сопротивлятся, в противном случае 50/50. -->
-    <!-- todo Смерть слабого вампира при попытке создать нового вампира -->
     <comps>
       <li Class="SMP_Duskborn.Abilities.DuskKiss.DuskKiss_Comps">
-        <!--
-        <thoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThought</thoughtDefToGiveDuskbornTargetBeforeBite> -->
-        <!--
-        <opinionThoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThoughtMood</opinionThoughtDefToGiveDuskbornTargetBeforeBite> -->
+        <thoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThought</thoughtDefToGiveDuskbornTargetBeforeBite>
+        <opinionThoughtDefToGiveDuskbornTargetBeforeBite>SMPdb_TryedToKillThoughtMood</opinionThoughtDefToGiveDuskbornTargetBeforeBite>
 
-        <!--
-        <thoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThought</thoughtDefToGiveHumanTargetBeforeBite> -->
-        <!--
-        <opinionThoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThoughtMood</opinionThoughtDefToGiveHumanTargetBeforeBite> -->
+        <thoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThought</thoughtDefToGiveHumanTargetBeforeBite>
+        <opinionThoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThoughtMood</opinionThoughtDefToGiveHumanTargetBeforeBite>
 
         <hemogenGain>0</hemogenGain>
         <bloodFilthToSpawnRange>10</bloodFilthToSpawnRange>

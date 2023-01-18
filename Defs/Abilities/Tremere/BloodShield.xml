@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef ParentName="PsycastBaseSkip" Name="SMPdb_BloodShield_Base" Abstract="true">
+    <label>blood shield</label>
+    <description>Creates a spherical ground shield of blood using the power of Hemogenes, the shield
+      reflects all incoming and outgoing projectiles at ground level. This process is strong enough
+      to detonate explosive shells. People and objects will not be harmed.</description>
+    <iconPath>Abilities/BulletShield</iconPath>
+    <writeCombatLog>True</writeCombatLog>
+    <hotKey>Misc12</hotKey>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <statBases>
+      <Ability_EffectRadius>4.9</Ability_EffectRadius>
+    </statBases>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <warmupTime>1.5</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <AbilityDef ParentName="SMPdb_BloodShield_Base">
+    <defName>SMPdb_BloodShield_lv1</defName>
+    <!-- 60 sec -->
+    <cooldownTicksRange>3600</cooldownTicksRange>
+    <comps>
+      <li Class="SMP_Duskborn.Utils.CheckGeneration.CheckGeneration_Comps">
+        <minGeneration>16</minGeneration>
+      </li>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.3</hemogenCost>
+      </li>
+      <li Class="CompProperties_AbilitySpawn">
+        <thingDef>SMPHB_BulletShieldBlood</thingDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BulletShieldAreaEffect</fleckDef>
+        <sound>Psycast_Skip_Exit</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="SMPdb_BloodShield_Base">
+    <defName>SMPdb_BloodShield_lv2</defName>
+    <!-- 35 sec -->
+    <cooldownTicksRange>2100</cooldownTicksRange>
+    <comps>
+      <li Class="SMP_Duskborn.Utils.CheckGeneration.CheckGeneration_Comps">
+        <minGeneration>10</minGeneration>
+      </li>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.3</hemogenCost>
+      </li>
+      <li Class="CompProperties_AbilitySpawn">
+        <thingDef>SMPHB_BulletShieldBlood</thingDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BulletShieldAreaEffect</fleckDef>
+        <sound>Psycast_Skip_Exit</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="SMPdb_BloodShield_Base">
+    <defName>SMPdb_BloodShield_lv3</defName>
+    <!-- 15 sec -->
+    <cooldownTicksRange>900</cooldownTicksRange>
+    <comps>
+      <li Class="SMP_Duskborn.Utils.CheckGeneration.CheckGeneration_Comps">
+        <minGeneration>6</minGeneration>
+      </li>
+      <li Class="CompProperties_AbilityHemogenCost">
+        <hemogenCost>0.3</hemogenCost>
+      </li>
+      <li Class="CompProperties_AbilitySpawn">
+        <thingDef>SMPHB_BulletShieldBlood</thingDef>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>BulletShieldAreaEffect</fleckDef>
+        <sound>Psycast_Skip_Exit</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>
