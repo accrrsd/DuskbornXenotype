@@ -1,0 +1,18 @@
+<GeneDef>
+  <defName>SMPdb_DivisibleBlood_Gene</defName>
+  <label>Divisible blood</label>
+  <labelShortAdj>Divisible blood</labelShortAdj>
+  <description>Carriers of this gene possess blood that contains sufficient information to change
+    the genotype of another living being into the duskborn genotype with lower generation. If the
+    carriers implant blood while replenishing its information, they will die.</description>
+  <iconPath>UI/Icons/Genes/Gene_XenogermReimplanter</iconPath>
+  <displayCategory>Hemogen</displayCategory>
+  <abilities>
+    <li>SMPdb_ReimplantXenogerm</li>
+  </abilities>
+  <descriptionHyperlinks>
+    <AbilityDef>SMPdb_ReimplantXenogerm</AbilityDef>
+  </descriptionHyperlinks>
+  <biostatCpx>2</biostatCpx>
+  <biostatMet>2</biostatMet>
+</GeneDef>

@@ -15,7 +15,7 @@
     <aiCanUse>true</aiCanUse>
     <verbProperties>
       <warmupTime>1.5</warmupTime>
-      <range>24.9</range>
+      <range>14.9</range>
       <targetParams>
         <canTargetPawns>false</canTargetPawns>
         <canTargetLocations>true</canTargetLocations>
@@ -50,7 +50,7 @@
     <cooldownTicksRange>2100</cooldownTicksRange>
     <comps>
       <li Class="SMP_Duskborn.Utils.CheckGeneration.CheckGeneration_Comps">
-        <minGeneration>10</minGeneration>
+        <minGeneration>9</minGeneration>
       </li>
       <li Class="CompProperties_AbilityHemogenCost">
         <hemogenCost>0.3</hemogenCost>

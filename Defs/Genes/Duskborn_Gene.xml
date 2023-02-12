@@ -49,6 +49,6 @@
       </suffixSymbols>
     </symbolPack>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>2</biostatMet>
+    <biostatMet>-2</biostatMet>
   </GeneDef>
 </Defs>

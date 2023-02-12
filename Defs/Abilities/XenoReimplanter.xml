@@ -1,0 +1,36 @@
+<AbilityDef ParentName="AbilityTouchBase">
+  <defName>SMPdb_ReimplantXenogerm</defName>
+  <label>Make low generation</label>
+  <description>Implant this person's xenogenes into a willing subject using a special injector
+    organ. If this person's genes are currently regrowing, they will implant their xenogerm and die
+    in the process.\n\nWhen implanted, a xenogerm will overwrite the target's xenogenes. Germline
+    genes will be unaffected.</description>
+  <iconPath>UI/Icons/Genes/Gene_XenogermReimplanter</iconPath>
+  <warmupStartSound>ReimplantXenogerm_Cast</warmupStartSound>
+  <warmupEffecter>Implant_Xenogerm</warmupEffecter>
+  <category>Sanguophage</category>
+  <displayOrder>500</displayOrder>
+  <verbProperties>
+    <verbClass>Verb_CastAbilityTouch</verbClass>
+    <drawAimPie>false</drawAimPie>
+    <range>-1</range>
+    <warmupTime>10</warmupTime>
+    <targetParams>
+      <canTargetAnimals>false</canTargetAnimals>
+      <canTargetSelf>false</canTargetSelf>
+      <canTargetBuildings>false</canTargetBuildings>
+      <canTargetMechs>false</canTargetMechs>
+    </targetParams>
+  </verbProperties>
+  <comps>
+    <li Class="SMP_Duskborn.Abilities.DivisibleBlood_Comps">
+      <thoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThought</thoughtDefToGiveHumanTargetBeforeBite>
+      <opinionThoughtDefToGiveHumanTargetBeforeBite>SMPdb_TryedToTurnThoughtMood</opinionThoughtDefToGiveHumanTargetBeforeBite>
+    </li>
+    <li Class="CompProperties_AbilityReimplantXenogerm" />
+    <li Class="SMP_Duskborn.Utils.CheckGeneration.CheckGeneration_Comps">
+      <minGeneration>16</minGeneration>
+      <hideGizmo>false</hideGizmo>
+    </li>
+  </comps>
+</AbilityDef>
